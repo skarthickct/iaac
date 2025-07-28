@@ -2,21 +2,21 @@ locals {
   environment_name = "Dev"
   project_name = "tapplent"
   region = "ap-south-1"
-  vpc_id = "vpc-0350536e3140cb3ea"
-  vpc_cidr = "10.0.0.0/16"
+  vpc_id = "vpc-06a474b4ce759a73d"
+  vpc_cidr = "172.31.0.0/16"
 
   karpenter_tag_key = "karpenter.sh/discovery"
 
   
-  eks_controlplane_subnet_az1 = "subnet-040bbadb16db7bfb4"
-  eks_controlplane_subnet_az2 = "subnet-09e46dff2672e5685"
+  eks_controlplane_subnet_az1 = "subnet-05709e15dc4ba8637"
+  eks_controlplane_subnet_az2 = "subnet-01f31edef0702ef61"
 
 
   #bastion host configuration
   bastion_host_name = "bastion-host-dev"
   key_name = "ap-south-1-key"                              # bastion host key pair
 
-  instance_type                    = "t3a.medium"
+  instance_type                    = "t2.micro"
   public_access                    = true
   
   subnet_ids                      = "subnet-013e9aed439988287"

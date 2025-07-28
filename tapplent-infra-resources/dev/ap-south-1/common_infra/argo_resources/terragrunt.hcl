@@ -1,5 +1,5 @@
 terraform {
-  source = "git::https://<Github-PAT-Token>@github.com/infra-modules.git//eks-resources"
+  source = "git::https://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@github.com/tapplent-infra-modules/eks-resources"
 }
 
 

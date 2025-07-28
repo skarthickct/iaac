@@ -1,5 +1,5 @@
 terraform {
-  source = "git::https://<Github-PAT-Token>@github.com/infra-modules.git//ec2"
+  source = "git::https://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@github.com/tapplent-infra-modules/ec2/main.tf"
 }
 
 include "root" {

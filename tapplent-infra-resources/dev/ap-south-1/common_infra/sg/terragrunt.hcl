@@ -1,6 +1,6 @@
 
 terraform {
-  source = "git::https://<Github-PAT-Token>@github.com/AWS-CICD-ASISTA/asista-infra-modules.git//sg"
+  source = "git::https://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@github.com/tapplent-infra-modules/sg"
 }
 
 # Include the parent configuration

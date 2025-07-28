@@ -1,5 +1,5 @@
 terraform {
-  source = "git::https://<Github-PAT-Token>@github.com/infra-modules.git//eks"
+  source = "git::https://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@github.com/tapplent-infra-modules/eks"
 }
 
 include "root" {
@@ -29,7 +29,7 @@ inputs = {
 
     eks_managed_node_groups = {
       tapplent-frontend-nodes = {
-        instance_types = ["t3a.medium"]
+        instance_types = ["t2.micro"]
         ami_type       = "AL2_x86_64"
         min_size     = 3
         max_size     = 4
@@ -55,7 +55,7 @@ inputs = {
 
 
       tapplent-common-nodes = {
-        instance_types = ["t3a.medium"]
+        instance_types = ["t2.micro"]
         ami_type       = "AL2_x86_64"
         min_size     = 3
         max_size     = 4
@@ -80,7 +80,7 @@ inputs = {
       }
  
       tapplent-backend-nodes = {
-        instance_types = ["t3a.medium"]
+        instance_types = ["t2.micro"]
         ami_type       = "AL2_x86_64"
         min_size       = 3
         max_size       = 4
